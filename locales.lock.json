@@ -1,0 +1,14 @@
+{
+  "locales": {
+    "ru": {
+      "listing.description": "398c932f606f",
+      "listing.name": "571843baaf92",
+      "trigger.achievement_unlocked.label": "43e14e08ecfd",
+      "trigger.game_started.label": "051fd6cd9291",
+      "trigger.game_stopped.label": "200bbfa7495b",
+      "ui.games.label": "d9dae78103ad"
+    }
+  },
+  "schema": "astra.plugin.locales/1",
+  "source": "en"
+}

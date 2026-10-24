@@ -1,0 +1,33 @@
+[plugin]
+id = "game-companion"
+name = "Game Companion"
+version = "0.1.0"
+description = "Astra notices which game you are playing and keeps you company: comments, break and bedtime reminders, session summaries, Steam achievements and play stats."
+author = "iaroslaviskendirov-alt"
+license = "MIT"
+homepage = "https://github.com/iaroslaviskendirov-alt/game-companion"
+
+# The generated action and trigger labels are `$keys` the DAEMON resolves.
+# Astra 0.2.1 is the first release that does; an older one would show
+# your users the key instead of the label, so it is refused the install.
+# Delete this line if you replace those keys with literal English.
+min_astra_version = "0.2.7"
+
+[platform]
+os = ["windows"]
+
+[entry]
+command = "node"
+args = ["dist/index.js"]
+runtimes = ["node"]
+
+# `[capabilities]` is what the daemon may call INTO this plugin.
+[capabilities]
+tools = true
+triggers = true
+ui_contributions = true
+
+# `[permissions]` is what this plugin may call OUT to; each reason is shown at install.
+[permissions]
+send_chat_message = { reason = "Lets Astra comment on game start, breaks, bedtime, session end and achievements, and answer questions from the Games tab" }
+fire_trigger = { reason = "Fires Game started, Game closed and Achievement unlocked so your own automations can react" }

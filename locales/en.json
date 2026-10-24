@@ -1,0 +1,8 @@
+{
+  "listing.name": "Game Companion",
+  "listing.description": "Astra notices which game you are playing and keeps you company: comments, break and bedtime reminders, session summaries, Steam achievements and play stats.",
+  "trigger.game_started.label": "Game started",
+  "trigger.game_stopped.label": "Game closed",
+  "trigger.achievement_unlocked.label": "Steam achievement unlocked",
+  "ui.games.label": "Games"
+}

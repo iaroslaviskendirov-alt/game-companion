@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head>
+<script src="http://astra-plugin.localhost/bridge/astra-bridge.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Games</title>
+<style>
+  :root { color-scheme: normal; }
+  html, body { background: transparent; margin: 0; }
+  body { color-scheme: light dark; color: var(--color-text); font-size: 14px; }
+  #app { padding: 16px; max-width: 760px; margin: 0 auto; box-sizing: border-box; }
+  .stack { display: flex; flex-direction: column; gap: 12px; }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .grow { flex: 1 1 180px; min-width: 0; }
+  .muted { color: var(--color-text-muted); }
+  .small { font-size: 12px; }
+  .tabs { margin-bottom: 14px; }
+
+  .now-game { font-size: 22px; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
+  .timer { font-size: 34px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+  .answer { white-space: pre-wrap; line-height: 1.5; overflow-wrap: anywhere; }
+
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+  .metric-value { font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; align-items: end; height: 110px; }
+  .day { display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end; min-width: 0; }
+  .day-bar { width: 100%; max-width: 34px; border-radius: 6px 6px 3px 3px; background: var(--color-accent); min-height: 2px; opacity: .85; }
+  .day-bar.zero { background: var(--color-border); opacity: 1; }
+  .day-label { font-size: 11px; color: var(--color-text-muted); }
+
+  .top { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .top li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; }
+  .top .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .top .track { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--color-border); overflow: hidden; }
+  .top .fill { height: 100%; background: var(--color-accent); border-radius: 3px; }
+
+  .list { margin: 0; padding: 0; list-style: none; }
+  .list li { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--color-border); min-width: 0; }
+  .list li:last-child { border-bottom: 0; }
+  .list .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .list .meta { color: var(--color-text-muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .scroll { max-height: 260px; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body><div id="app"></div>
+<script type="module" src="./main.js"></script></body></html>

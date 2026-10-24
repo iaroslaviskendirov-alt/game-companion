@@ -1,0 +1,8 @@
+{
+  "listing.description": "Астра понимает, во что ты играешь, и составляет компанию: комментирует запуск, напоминает о перерыве и сне, подводит итог сессии, радуется ачивкам Steam и ведёт статистику.",
+  "listing.name": "Игровой компаньон",
+  "trigger.achievement_unlocked.label": "Получено достижение Steam",
+  "trigger.game_started.label": "Игра запущена",
+  "trigger.game_stopped.label": "Игра закрыта",
+  "ui.games.label": "Игры"
+}
