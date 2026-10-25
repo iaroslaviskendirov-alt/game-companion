@@ -1,7 +1,7 @@
 [plugin]
 id = "game-companion"
 name = "Game Companion"
-version = "0.1.0"
+version = "0.1.1"
 description = "Astra notices which game you are playing and keeps you company: comments, break and bedtime reminders, session summaries, Steam achievements and play stats."
 author = "iaroslaviskendirov-alt"
 license = "MIT"
